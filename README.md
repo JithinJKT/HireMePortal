@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **CompanyName Career Portal** is a web application developed using .NET 8 and ASP.NET Core MVC. It provides a platform for listing career opportunities and job applications within the company.
+The **HireMePortal** is a web application developed using .NET 8 and ASP.NET Core MVC. It provides a platform for listing career opportunities and job applications within the company.
 
 ## Features
 
