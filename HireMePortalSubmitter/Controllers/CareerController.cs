@@ -26,7 +26,10 @@ namespace HireMePortalSubmitter.Controllers
             {
                 return NotFound();
             }
-            return View();
+            CareerApply careerApply = new CareerApply();
+            careerApply.CareerId=category.Id;
+            careerApply.JobCode=category.JobCode;
+            return View(careerApply);
         }
 
         [HttpPost, ActionName("Apply")]

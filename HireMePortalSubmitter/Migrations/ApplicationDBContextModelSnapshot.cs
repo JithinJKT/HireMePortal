@@ -110,11 +110,18 @@ namespace HireMePortalSubmitter.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CareerApplyId"));
 
+                    b.Property<int>("CareerId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("JobCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

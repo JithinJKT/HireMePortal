@@ -7,7 +7,7 @@
 namespace HireMePortalSubmitter.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class dbstructure : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,7 +21,9 @@ namespace HireMePortalSubmitter.Migrations
                     FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     YearofExperinace = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    JobCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CareerId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

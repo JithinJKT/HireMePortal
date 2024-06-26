@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HireMePortalSubmitter.Models
 {
@@ -19,5 +20,9 @@ namespace HireMePortalSubmitter.Models
         [Required]
         [DisplayName("Email")]
         public string Email { get; set; }
+        [DisplayName("Job Code")]
+        public string JobCode { get; set; }
+        public int CareerId { get; set; }
+
     }
 }

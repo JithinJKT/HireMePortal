@@ -6,21 +6,15 @@
             <h2 class="text-primary">Apply</h2>
             <hr />
         </div>
-       @*  <div class="mb-3 row p-2">
-            <label asp-for="Name" class="p-0"></label>
-            <input asp-for="Name" type="text" class="form-control" disabled />
-            <span asp-validation-for="Name" class="text-danger"></span>
+        <div class="mb-3 row p-2" style=" display: none;">
+            <label asp-for="CareerId" class="p-0"></label>
+            <input asp-for="CareerId" type="text" class="form-control" />
         </div>
         <div class="mb-3 row p-2">
             <label asp-for="JobCode" class="p-0"></label>
-            <input asp-for="JobCode" type="text" class="form-control" disabled/>
+            <input asp-for="JobCode" type="text"  class="form-control" readonly/>
             <span asp-validation-for="JobCode" class="text-danger"></span>
         </div>
-        <div class="mb-3 row p-2">
-            <label asp-for="Location" class="p-0"></label>
-            <input asp-for="Location" type="text" class="form-control" disabled />
-            <span asp-validation-for="Location" class="text-danger"></span>
-        </div> *@
         <div class="mb-3 row p-2">
             <label asp-for="FullName" class="p-0"></label>
             <input asp-for="FullName" type="text" class="form-control" />
